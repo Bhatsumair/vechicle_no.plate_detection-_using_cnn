@@ -1,0 +1,42 @@
+#!/usr/bin/python3
+import cgi
+import os
+import subprocess as sp
+print("content-type: text/html")
+print()
+f=cgi.FieldStorage()
+cmd = f.getvalue("x")
+
+if cmd == "DLLCAFL9L3":
+	print('''<pre>
+	Car Number: DLLCAFL9L3
+	Car Model: BMW	
+	Registration Name: Manoj kumar
+	Registration Date: 27/11/2018
+	Location: Delhi, India
+	Vehicle Class: SUV
+	Insurance Upto: 29/12/2023
+	</pre>''')
+elif cmd == "C 5638HM":
+	print('''<pre>
+	Car Number: B 2228HM
+	Car Model: BMW	
+	Registration Name: Rajaesh
+	Registration Date: 17/1/2016
+	Fuel Type: CNG
+	Location: jalander, India
+	Vehicle Class: SUV
+	Insurance Upto: 19/12/2026
+	</pre>''')
+
+elif cmd == "TLL D4VNY":
+	print('''<pre>
+	Car Number: TTL D4FTY
+	Car Model: BMW	
+	Registration Name: mahesh
+	Registration Date: 17/11/2019
+	Fuel Type: CNG
+	Location: Maharastra, India
+	Vehicle Class: SUV
+	Insurance Upto: 07/12/2029
+	</pre>''')
